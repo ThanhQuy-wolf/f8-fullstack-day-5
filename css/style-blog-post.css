@@ -1,0 +1,89 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+p,
+ul,
+ol {
+    margin: 20px 0;
+}
+
+.drop-cap::first-letter {
+    font-size: 5rem;
+    font-weight: bold;
+    float: left;
+    margin-right: 8px;
+}
+
+p::first-line {
+    font-style: italic;
+    background: #f3e8ff;
+}
+
+::selection {
+    background: yellowgreen;
+    color: #000;
+}
+
+blockquote {
+    position: relative;
+    padding-left: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+blockquote::before {
+    content: "“";
+    font-size: 4rem;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    color: #999;
+}
+
+h2:not(h1),
+h3:not(h1) {
+    color: #5f33ff;
+}
+
+p:nth-of-type(odd) {
+    background: #fafafa;
+}
+
+p:nth-of-type(even) {
+    background: #f0f0ff;
+}
+
+.comments {
+    margin-top: 40px;
+}
+
+.comment {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: #eee;
+    transition: 0.3s;
+}
+
+.comment:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: #ddd;
+}
